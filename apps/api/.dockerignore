@@ -1,0 +1,5 @@
+.env*
+.git
+node_modules/
+infra/
+cdk.out/
