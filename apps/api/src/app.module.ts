@@ -7,7 +7,7 @@ import { configuration } from './config';
 
 import { HelloModule } from './modules/hello/hello.module';
 import { LoggerModule } from './common/logger/logger.module';
-import { PrismaService } from './modules/prisma/prisma.service';
+import { PrismaModule } from './modules/prisma/prisma.module';
 
 @Module({
   imports: [
@@ -23,7 +23,8 @@ import { PrismaService } from './modules/prisma/prisma.service';
     ScheduleModule.forRoot(),
     LoggerModule,
     HelloModule,
+    PrismaModule,
   ],
-  providers: [PrismaService],
+  providers: [],
 })
 export class AppModule {}
